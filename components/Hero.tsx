@@ -24,7 +24,7 @@ function Hero() {
     words="Transforming Concepts into seamless Web Experiences"
     />
 
-    <p className='text-center md:tracking-wider mb-4  text-sm md:text-lg lg:text-2xl'>Hi, I'm Ali Raza, a Next.js / MERN developer, based in Lahore.</p>
+    <p className='text-center md:tracking-wider mb-4  text-sm md:text-lg lg:text-2xl'>Hi, I&apos;m Ali Raza, a Next.js / MERN developer, based in Lahore.</p>
     <a href="#about">
     <MagicButton
     title='Show my projects'
