@@ -1,7 +1,5 @@
 import React from "react";
 import { projects } from "@/lib/data";
-import { div } from "three/webgpu";
-import { Pin } from "./PinContainer";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 

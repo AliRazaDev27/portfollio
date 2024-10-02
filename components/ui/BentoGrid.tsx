@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import {  useState } from "react";
-import { GlobeDemo } from "./GridGlobe";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -93,10 +91,10 @@ export const BentoGridItem = ({
 
 {id===6 && (
   <BackgroundGradientAnimation>
-    {/* <div
+    <div
     className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
      
-    </div> */}
+    </div>
   </BackgroundGradientAnimation>
 )}
 
@@ -106,7 +104,7 @@ export const BentoGridItem = ({
 <div className="font-sans font-bold text-lg lg:text-3xl max-w-96">
           {title}  
 </div>
-{id===2 && <GlobeDemo/>}
+
 {id===3 && (
   <div className="flex  gap-1 lg:gap-5  w-fit absolute -right-4 lg:right-4">
 <div className="flex flex-col gap-3 lg:gap-8">

@@ -25,7 +25,7 @@ function Hero() {
     />
 
     <p className='text-center md:tracking-wider mb-4  text-sm md:text-lg lg:text-2xl'>Hi, I&apos;m Ali Raza, a Next.js / MERN developer, based in Lahore.</p>
-    <a href="#about">
+    <a href="#projects">
     <MagicButton
     title='Show my projects'
     icon={<FaLocationArrow/>}

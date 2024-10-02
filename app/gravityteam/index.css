@@ -1,0 +1,76 @@
+.bg-gradient{
+    background: linear-gradient(90deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+}
+.bg-primary{
+    background-color: #141619;
+}
+.text-gradient{
+    
+    background: linear-gradient(90deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    -webkit-background-clip: text; /* Clip background to the text */
+    background-clip: text;
+    color: transparent; /* Make the text color transparent */   
+}
+.animate-up {
+    animation-name: up;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.animate-down{
+    animation-name: down;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes up {
+    0% {
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(-25%);
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-25%);
+    }
+    100% {
+        transform: translateY(25%);
+    }
+}
+
+/* CircularSlider.css */
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .slider-track {
+    display: flex;
+    width: max-content;
+    animation: slide 20s linear infinite;
+  }
+  
+  .slider-item {
+    min-width: 200px; /* Adjust based on your design */
+    margin-right: 10px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Move half the distance since the items array is duplicated */
+    }
+  }
+  

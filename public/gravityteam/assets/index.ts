@@ -1,0 +1,34 @@
+export const partners = [
+    {
+        name:'bitbank',
+        image:'/images/gravity_team/bitbank.webp',
+     },
+     {
+        name:'bitstamp',
+        image:'/images/gravity_team/bitstamp.webp',
+     },
+     {
+        name:'coinbase',
+        image:'/images/gravity_team/coinbase.webp',
+     },
+     {
+        name:'bitfinex',
+        image:'/images/gravity_team/bitfinex.webp',
+     },
+     {
+        name:'binance',
+        image:'/images/gravity_team/binance.webp',
+     },
+     {
+        name:'valr',
+        image:'/images/gravity_team/valr.webp',
+     },
+     {
+        name:'bitso',
+        image:'/images/gravity_team/bitso.webp',
+     },
+     {
+        name:'cryptocom',
+        image:'/images/gravity_team/cryptocom.webp',
+     },
+]

@@ -1,0 +1,26 @@
+.slide-out-gradient {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Adjust height based on parent element */
+    background-color: transparent;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .slide-out-gradient::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0; /* Initially hidden to the left */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(90deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    transition: transform 0.5s ease; /* Smooth slide effect */
+  }
+  
+  .slide-out-gradient:hover::after {
+    transform: translateX(100%); /* Slide the ::after element from left to right */
+  }
+  
