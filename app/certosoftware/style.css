@@ -1,0 +1,128 @@
+:root {
+    --color-primary: #02033b;
+    --color-yellow: #ffc247;
+    --color-purple: #4335de;
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-yellow {
+    background-color: var(--color-yellow);
+}
+
+.bg-purple {
+    background-color: var(--color-purple);
+}
+
+.bg-gradient-yellow {
+    background-image: linear-gradient(180deg, #F7C95F 0%, #FDB235 100%);
+}
+
+.bg-gradient-purple {
+    background-image: linear-gradient(180deg, #2925CC 0%, #4B48E5 100%);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-yellow {
+    color: var(--color-yellow);
+}
+
+.text-purple {
+    color: var(--color-purple);
+}
+.nav-list>li{
+    padding-top: 16px;
+    padding-bottom: 30px;
+}
+.nav-list>li>span:hover{
+    color:#4335de;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.sprite{
+    width: 77px;
+    height: 72px;
+    /* background: url("/certosoftware/keylogger-detection-hover.png") no-repeat 0% 0%; */
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    
+}
+.sprite:hover{
+    animation: sprite-hover 1s steps(29) forwards;
+}
+@keyframes sprite-hover {
+    from {background-position: 0% 0%;}
+    to {background-position: -2233px 0%;}
+}
+
+.showUp{
+    animation: showup 1.5s ease;
+}
+
+@keyframes showup {
+    from {
+        opacity: 0;
+        transform:translate3d(0,100%,0);
+    }
+    to {
+        opacity: 1;
+        transform:translate3d(0,0,0);
+    }
+}
+
+.moveUp{
+    animation: moveUp 1.5s ease;
+}
+
+@keyframes moveUp {
+    from {
+        transform:translate3d(0,100%,0);    
+    }
+    to {    
+        transform:translate3d(0,0,0);
+    }
+}
+.moveDown{
+    animation: moveDown 1.5s ease;
+}
+
+@keyframes moveDown {
+    from {
+        transform:translate3d(0,-100%,0);    
+    }
+    to {    
+        transform:translate3d(0,0,0);
+    }
+}
+
+.rotate{
+    animation: rotate 1.5s ease;
+}
+
+@keyframes rotate {
+    from {
+        transform:rotate(6deg);
+    }
+    to {
+        transform:rotate(366deg);
+    }
+}
+
+.bgCircle{
+    position: absolute;
+    aspect-ratio: 1/1;
+    z-index: -10;
+    height: 100%;
+    border-radius: 50%;
+    top:0px;
+    left:50%;
+    translate: -47% 0;
+    transform: scale(0);
+}
+

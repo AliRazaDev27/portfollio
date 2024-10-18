@@ -9,6 +9,10 @@ import { Mentions } from "./mentions";
 import { Partners } from "./partners";
 import { Slider } from "./slider";
 
+export const metadata = {
+  title:"Gravity Team"
+}
+
 export default function GravityTeam() {
     return (
         <main className="bg-primary text-white min-h-screen">

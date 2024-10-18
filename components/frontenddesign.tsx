@@ -1,5 +1,6 @@
 const designs = [
-    { name: 'Gravity Team', url: '/gravityteam' },
+    { name: 'Gravity Team', img: '/gravityteam.png', url: '/gravityteam' },
+    { name: 'Certosoftware', img: '/certosoftware.png', url: '/certosoftware' },
     
     // Add more designs here
   ];
@@ -15,16 +16,10 @@ export function FrontendDesign() {
       {designs.map((design, index) => (
         <div key={index} className="design-preview">
           <div className="flex items-center justify-center my-8">
-          <a href="/gravityteam" className="text-2xl md:text-3xl font-bold hover:text-red-600 underline underline-offset-8">{design.name}</a>
+          <a href={design.url} className="text-2xl md:text-3xl font-bold hover:text-red-600 underline underline-offset-8">{design.name}</a>
           </div>
-          <div className="iframe-container">
-            <iframe
-              src={design.url}
-              title={design.name}
-              frameBorder="0"
-              loading="lazy"
-              style={{ width: '100%', height: '100vh' }} // Adjust height as needed
-            />
+          <div className="">
+            <img src={design.img} alt="" />
           </div>
         </div>
       ))}

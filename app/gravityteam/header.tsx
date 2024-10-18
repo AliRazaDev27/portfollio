@@ -29,7 +29,7 @@ export function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollPosition]);
-// "fixed top-0 left-0 w-full bg-white shadow-lg transition-transform duration-300",
+
   return (
     <>
       <header className={`w-full  fixed top-0 left-0 bg-primary h-[15vh] mx-auto px-4 sm:px-8 md:px-12 lg:px-16 hidden md:flex justify-between items-center gap-2 py-4 transition-transform duration-500 z-50 ${isScrollingUp ? "translate-y-0" : "-translate-y-full"}`}>
